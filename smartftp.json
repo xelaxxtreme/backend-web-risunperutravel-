@@ -1,0 +1,21 @@
+{
+  "name": "pagina",
+  "host": "ftp.terresdesincas.com",
+  "protocol": "ftp",
+  "port": 21,
+  "username": "alex@admin.terresdesincas.com",
+  "password": "YiREoV=V{n5}6m*X",
+  "remotePath": "/",
+  "uploadOnSave": true,
+  "useTempFile": false,
+  "openSsh": false,
+  "watcher": {
+    "files": "**/*",
+    "autoUpload": true,
+    "autoDelete": false,
+    "ignoreCreate": false,
+    "ignoreUpdate": false,
+    "ignoreDelete": true
+  },
+  "ignore": []
+}

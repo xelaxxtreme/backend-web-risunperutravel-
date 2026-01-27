@@ -1,0 +1,6 @@
+[28-Nov-2025 16:08:54 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: User terresde_administrador already has more than 'max_user_connections' active connections in /home/terresde/admin.terresdesincas.com/pagina/config/db.php:7
+Stack trace:
+#0 /home/terresde/admin.terresdesincas.com/pagina/config/db.php(7): mysqli->__construct()
+#1 /home/terresde/admin.terresdesincas.com/pagina/menu/index.php(2): require_once('/home/terresde/...')
+#2 {main}
+  thrown in /home/terresde/admin.terresdesincas.com/pagina/config/db.php on line 7
