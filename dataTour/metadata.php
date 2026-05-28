@@ -12,9 +12,10 @@ function getMetadata($slug) {
     try {
         // Preparamos la consulta
         $stmt = $conn->prepare("
-            SELECT id, nombre, slug, idioma, tipo, frase_seo, imagen_portada
-            FROM tours
-            WHERE slug = ?
+           SELECT t.id, t.nombre, t.keywords, t.slug, t.idioma, m.menu_slug AS tipo, t.frase_seo, t.imagen_portada
+            FROM tours t LEFT JOIN idioma_menu im ON t.idTipo = im.id
+            LEFT JOIN menu m ON im.menu_id = m.id
+            WHERE t.slug = ?
         ");
         $stmt->bind_param("s", $slug);
         $stmt->execute();

@@ -1,0 +1,10 @@
+[30-Jan-2026 15:57:17 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Column 'imagen' cannot be null in /home/risunper/administrador.risunperutravel.com/api/idiomas/index.php:56
+Stack trace:
+#0 /home/risunper/administrador.risunperutravel.com/api/idiomas/index.php(56): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home/risunper/administrador.risunperutravel.com/api/idiomas/index.php on line 56
+[25-Feb-2026 16:29:09 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Column 'imagen' cannot be null in /home/risunper/administrador.risunperutravel.com/api/idiomas/index.php:56
+Stack trace:
+#0 /home/risunper/administrador.risunperutravel.com/api/idiomas/index.php(56): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home/risunper/administrador.risunperutravel.com/api/idiomas/index.php on line 56

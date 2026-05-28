@@ -16,10 +16,12 @@ function getPortada($ids) {
     try {
         $placeholders = implode(',', array_fill(0, count($ids), '?'));
         $sql = "
-            SELECT id, nombre, slug, tipo, imagen_portada
-            FROM tours
-            WHERE id IN ($placeholders)
-        ";
+    SELECT t.id , t.nombre, t.slug, m.menu_slug as tipo, t.imagen_portada
+    FROM tours t
+    LEFT JOIN idioma_menu im ON t.idTipo = im.id 
+    LEFT JOIN menu m ON im.menu_id = m.id
+    WHERE t.id IN ($placeholders)
+";
 
         $stmt = $conn->prepare($sql);
         $types = str_repeat('i', count($ids));
